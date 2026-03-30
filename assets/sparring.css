@@ -1,0 +1,164 @@
+/* ── BP Jitsi Sparring – Styles ── */
+
+/* Trigger-Button */
+.bpjs-trigger-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .2s, transform .1s;
+    margin: 8px 0;
+}
+.bpjs-trigger-btn:hover { background: #c0392b; transform: scale(1.03); }
+
+/* ── Modal ── */
+.bpjs-modal { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; }
+.bpjs-modal[hidden] { display: none; }
+
+.bpjs-modal-backdrop {
+    position: absolute; inset: 0;
+    background: rgba(0,0,0,.55);
+    backdrop-filter: blur(3px);
+}
+.bpjs-modal-box {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 36px;
+    width: min(520px, 94vw);
+    max-height: 92vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    animation: bpjsFadeIn .2s ease;
+}
+@keyframes bpjsFadeIn {
+    from { opacity: 0; transform: translateY(-16px) scale(.97); }
+    to   { opacity: 1; transform: none; }
+}
+
+.bpjs-modal-close {
+    position: absolute; top: 16px; right: 16px;
+    background: none; border: none; cursor: pointer;
+    font-size: 20px; color: #888; line-height: 1;
+    transition: color .15s;
+}
+.bpjs-modal-close:hover { color: #333; }
+
+.bpjs-modal-box h2 { margin: 0 0 8px; font-size: 1.4rem; color: #222; }
+.bpjs-modal-desc   { color: #666; margin-bottom: 24px; font-size: .95rem; }
+
+/* Form */
+#bpjs-start-form label {
+    display: block;
+    margin: 16px 0 4px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #333;
+}
+#bpjs-start-form input[type=text],
+#bpjs-start-form input[type=number],
+#bpjs-start-form select {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: .95rem;
+    transition: border-color .2s;
+    outline: none;
+}
+#bpjs-start-form input:focus,
+#bpjs-start-form select:focus { border-color: #e74c3c; }
+
+.bpjs-form-actions { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+
+.bpjs-btn-primary {
+    flex: 1;
+    background: #e74c3c; color: #fff;
+    border: none; border-radius: 8px;
+    padding: 12px 20px; font-size: 15px; font-weight: 700;
+    cursor: pointer; transition: background .2s;
+}
+.bpjs-btn-primary:hover { background: #c0392b; }
+.bpjs-btn-primary:disabled { background: #ccc; cursor: default; }
+
+.bpjs-btn-secondary {
+    background: #f4f4f4; color: #555;
+    border: none; border-radius: 8px;
+    padding: 12px 20px; font-size: 15px;
+    cursor: pointer; transition: background .2s;
+}
+.bpjs-btn-secondary:hover { background: #e8e8e8; }
+
+.bpjs-error { color: #e74c3c; font-size: .9rem; margin-top: 12px; }
+
+/* ── Activity Stream Entry ── */
+.bpjs-activity-entry { margin-top: 10px; }
+
+.bpjs-live-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #e74c3c; color: #fff;
+    font-size: 12px; font-weight: 700; letter-spacing: .05em;
+    padding: 3px 10px; border-radius: 100px;
+    margin-bottom: 8px;
+    animation: bpjsPulse 1.8s infinite;
+}
+@keyframes bpjsPulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(231,76,60,.6); }
+    50%       { box-shadow: 0 0 0 6px rgba(231,76,60,0); }
+}
+
+.bpjs-ended-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #95a5a6; color: #fff;
+    font-size: 12px; font-weight: 700;
+    padding: 3px 10px; border-radius: 100px;
+    margin-bottom: 8px;
+}
+
+.bpjs-topic, .bpjs-category {
+    font-size: .95rem; color: #444;
+    margin: 4px 0;
+}
+
+.bpjs-counter {
+    font-size: .9rem; color: #666;
+    margin: 8px 0;
+}
+
+.bpjs-join-btn {
+    display: inline-block;
+    background: #27ae60; color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 8px; padding: 10px 20px;
+    font-size: 14px; font-weight: 700;
+    margin-top: 12px;
+    transition: background .2s, transform .1s;
+}
+.bpjs-join-btn:hover { background: #219a52; transform: scale(1.02); }
+.bpjs-join-hint { font-size: .82rem; color: #888; margin: 6px 0 0 0; }
+
+/* Session-Beenden-Button (nur für Host sichtbar) */
+.bpjs-end-btn {
+    display: inline-block;
+    background: #7f8c8d; color: #fff;
+    border: none; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px;
+    cursor: pointer; margin-top: 8px; margin-left: 8px;
+    transition: background .2s;
+}
+.bpjs-end-btn:hover { background: #636e72; }
+
+/* Feedback-Formular */
+.bpjs-feedback { margin-top: 16px; padding: 16px; background: #f9f9f9; border-radius: 8px; }
+.bpjs-feedback h4 { margin: 0 0 10px; font-size: .95rem; }
+.bpjs-stars { display: flex; gap: 4px; margin-bottom: 10px; }
+.bpjs-star  { font-size: 24px; cursor: pointer; opacity: .4; transition: opacity .15s; }
+.bpjs-star.active, .bpjs-star:hover { opacity: 1; }
+.bpjs-feedback textarea { width: 100%; padding: 8px; border: 1.5px solid #ddd; border-radius: 6px; font-size: .9rem; }
