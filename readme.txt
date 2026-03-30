@@ -34,6 +34,13 @@ Interessierte Mitglieder können direkt beitreten – kein Account nötig.
 * WordPress 5.8+
 * BuddyPress (aktiv)
 
+== Förderhinweis ==
+
+Community of Practice AI KA210 – VET 4603C73C wird von der Europäischen Union finanziert.
+Die geäußerten Ansichten und Meinungen entsprechen jedoch ausschließlich denen des Autors bzw. der Autoren
+und spiegeln nicht zwingend die der Europäischen Union oder der OeAD-GmbH wider.
+Weder die Europäische Union noch die OeAD-GmbH können dafür verantwortlich gemacht werden.
+
 == Changelog ==
 
 = 1.0.0 =
