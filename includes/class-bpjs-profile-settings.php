@@ -1,5 +1,15 @@
 <?php
 /**
+ * @author  Peter Grundner <peter.grundner@murbit.at>
+ * @date    September 2025
+ * @license MIT License – https://opensource.org/licenses/MIT
+ *
+ * Gefördert durch: Community of Practice AI KA210 – VET 4603C73C
+ * Finanziert von der Europäischen Union. Die geäußerten Ansichten und Meinungen
+ * entsprechen ausschließlich denen des Autors und spiegeln nicht zwingend die der
+ * Europäischen Union oder der OeAD-GmbH wider.
+ */
+/**
  * Opt-out Einstellung im BuddyPress-Profil (Notifications-Tab)
  * und im WP-Admin Profil.
  */
