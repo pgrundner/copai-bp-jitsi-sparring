@@ -5,7 +5,7 @@
  * @author  Peter Grundner <peter.grundner@murbit.at>
  * @date    September 2025
  * @license MIT License – https://opensource.org/licenses/MIT
- * @project Community of Practice AI KA210 – VET 4603C73C
+ * @project Community of Practice AI 2023-2-AT01-KA210-VET-000169864
  *
  * Förderhinweis:
  * 
